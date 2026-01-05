@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Information</title>
+  <style>
+    /* 全局样式 */
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    /* 顶部头部 */
+    .header {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto 10px auto;
+      padding: 0;
+    }
+
+    .header img {
+      display: block;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      max-height: 80px; /* 限制最大高度 */
+      margin: 0;
+    }
+
+    /* 内容区域 */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      font-size: 18px !important;
+      line-height: 24px !important;
+      font-weight: 400 !important;
+      color: #333 !important;
+    }
+
+    /* 信息表格样式 */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;          /* 小屏幕自动换行 */
+  border-bottom: 1px solid #e5e5e5;
+  padding: 16px 0;
+  gap: 20px;                /* 左右列间隔 */
+}
+
+.info-label {
+  flex: 0 0 30%;            /* 左列固定占30%，不会被压缩 */
+  font-weight: normal          /* 左列文字可加粗 */
+  line-height: 24px;         /* 与右列一致 */
+  display: flex;
+  align-items: flex-start;   /* 左侧文字顶部对齐右列 */
+  padding: 0;                /* 去掉额外内边距 */
+}
+
+.info-value {
+  flex: 1;                   /* 右列占剩余空间，自适应宽度 */
+  line-height: 24px;         /* 行高与左列一致 */
+  white-space: normal;       /* 自动换行 */
+  word-break: break-word;
+  padding-left: 0;           /* 不需要额外 padding，间隔由 gap 控制 */
+}
+
+
+    /* 奇数行浅灰背景 */
+    .container .info-row:nth-of-type(odd) {
+      background-color: #f9f9f9;
+    }
+
+    /* 英文说明 */
+    .en {
+      color: #555;
+    }
+
+    /* 返回链接 */
+    .back {
+      margin-top: 30px;
+    }
+
+    .back a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .back a:hover {
+      text-decoration: underline;
+    }
+
+    /* 手机端适配 */
+    @media (max-width: 768px) {
+      .info-row {
+        flex-direction: column;
+      }
+      .info-label,
+      .info-value {
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 头部 -->
+  <div class="header">
+    <img src="image/LOGO.png" alt="NOA GROUP">
+  </div>
+
+  <!-- 内容 -->
+  <div class="container">
+
+    <div class="info-row">
+      <div class="info-label">
+        企业名称<br>
+        <span class="en">(Certificate Company):</span>
+      </div>
+      <div class="info-value">
+        江苏康北新材料有限公司（JiangSu Kangbei New Material Co., Ltd.）
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        证书/报告号<br>
+        <span class="en">(Certificate Number):</span>
+      </div>
+      <div class="info-value">
+        NOA2312974
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        证书状态<br>
+        <span class="en">(Status):</span>
+      </div>
+      <div class="info-value">
+        有效（Valid）
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        标准版本<br>
+        <span class="en">(Standard Version):</span>
+      </div>
+      <div class="info-value">
+        GB/T 45001-2020 idt ISO45001:2018
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        证书/报告范围：
+      </div>
+      <div class="info-value">
+        硅胶泡棉和导热硅胶制品的生产和销售
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        Certificate Scope:
+      </div>
+      <div class="info-value">
+        Production and sales of silicone foam and thermally conductive silicone products
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        申投诉专线：
+      </div>
+      <div class="info-value">
+        (+86) 400 821 5138;<br>
+        (+86) 021-5097 7010;<br>
+        (+86) 15201892551
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        Complaint Line:
+      </div>
+      <div class="info-value">
+        (+86) 400 821 5138;<br>
+        (+86) 021-5097 7010;<br>
+        (+86) 15201892551
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        申投诉邮箱：
+      </div>
+      <div class="info-value">
+        complaint@noagroup.org
+      </div>
+    </div>
+
+    <div class="info-row">
+      <div class="info-label">
+        Complaint email:
+      </div>
+      <div class="info-value">
+        complaint@noagroup.org
+      </div>
+    </div>
+
+    <div class="back">
+      <a href="javascript:history.back();">点击返回</a>
+    </div>
+
+  </div>
+</body>
+</html>
+
